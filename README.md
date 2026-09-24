@@ -4,7 +4,7 @@ Contemporary Rwandan slow luxury and adaptable fashion atelier website built wit
 
 ## Deploy free with Cloudflare Pages
 
-Cloudflare Pages can deploy this Vite site from the GitHub repository and publish each push to the production branch automatically. The site uses React Router; `public/_redirects` is copied into the build so direct visits and refreshes on routes such as `/collections` return the app correctly.
+Cloudflare can deploy this Vite site from the GitHub repository and publish each push to the production branch automatically. React Router's client-side routes use Cloudflare's single-page application fallback; do not add a catch-all `_redirects` rule to `/index.html`, because Cloudflare detects that as a redirect loop.
 
 1. Push the finished branch to GitHub and merge it into `main` when you are ready for it to be public.
 2. Create or sign in to a free Cloudflare account, open **Workers & Pages**, choose **Create application** → **Pages** → **Connect to Git**.
