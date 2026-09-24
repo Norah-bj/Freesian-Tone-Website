@@ -257,15 +257,25 @@
 @media (max-width: 992px) {
   .coll-products-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
   }
 }
 
 @media (max-width: 640px) {
+  .coll-catalog-section {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .coll-filter-bar {
+    margin-bottom: 24px;
+    gap: 6px;
+  }
+  .coll-filter-pill {
+    font-size: 0.58rem;
+    padding: 5px 12px;
+  }
   .coll-products-grid {
     grid-template-columns: 1fr;
-  }
-  .coll-grid-container {
-    padding-top: var(--space-xl);
-    padding-bottom: var(--space-3xl);
+    gap: var(--space-md);
   }
 }

@@ -772,10 +772,47 @@
     gap: var(--space-md);
   }
   .studio-tabs {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .fabric-options-grid,
   .client-inputs-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .mw-hero {
+    padding: var(--space-xl) 0;
+  }
+  .mw-hero-container {
+    gap: var(--space-md);
+  }
+  .mw-hero-badges {
+    gap: 4px;
+  }
+  .mw-badge {
+    font-size: 0.52rem;
+    padding: 3px 6px;
+  }
+  .studio-tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 6px;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  .studio-tab {
+    flex: 0 0 160px;
+    padding: 10px 12px;
+  }
+  .measurements-inputs {
+    grid-template-columns: 1fr;
+  }
+  .form-summary-card {
+    padding: var(--space-sm);
+  }
+  .mw-details-section {
+    padding: var(--space-xl) 0;
   }
 }
