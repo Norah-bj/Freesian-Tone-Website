@@ -2,6 +2,19 @@
 
 Contemporary Rwandan slow luxury and adaptable fashion atelier website built with React + Vite. Handcrafted in Kigali with zero waste.
 
+## Deploy free with Cloudflare Pages
+
+Cloudflare Pages can deploy this Vite site from the GitHub repository and publish each push to the production branch automatically. The site uses React Router; `public/_redirects` is copied into the build so direct visits and refreshes on routes such as `/collections` return the app correctly.
+
+1. Push the finished branch to GitHub and merge it into `main` when you are ready for it to be public.
+2. Create or sign in to a free Cloudflare account, open **Workers & Pages**, choose **Create application** → **Pages** → **Connect to Git**.
+3. Authorize GitHub and select `Norah-bj/Freesian-Tone-Website`.
+4. Set the production branch to `main`, framework preset to **Vite**, build command to `npm run build`, and build output directory to `dist`. Leave the root directory blank (the repository root).
+5. Select **Save and Deploy**. Cloudflare will provide a `*.pages.dev` address; later pushes to `main` trigger production deployments automatically.
+6. Open the deployed home page and directly load `/collections`, `/multiway`, and `/our-story` to confirm client-side routes work. A custom domain is optional and is usually purchased separately.
+
+Build locally before deployment with `npm install` and `npm run build`. Cloudflare Pages Free currently allows 500 deployments per month and 20,000 files per site; see the [Pages limits](https://developers.cloudflare.com/pages/platform/limits/) for current limits.
+
 ## Overview
 
 Freesia Tone is an editorial, made-to-order fashion platform exploring modular silhouettes, profound adaptability, and Rwandan craftsmanship.

@@ -45,8 +45,7 @@ export default function Navigation() {
 
           {/* Logo */}
           <Link to="/" className="nav-logo">
-            <span className="logo-main">FREESIA TONE</span>
-            <span className="logo-sub">KIGALI</span>
+            <span className="logo-main">FREESIAN TONE</span>
           </Link>
 
           {/* Desktop Nav Links */}
@@ -96,7 +95,7 @@ export default function Navigation() {
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
             >
               <div className="mobile-menu-header">
-                <span className="mobile-menu-brand">FREESIA TONE</span>
+                <span className="mobile-menu-brand">FREESIAN TONE</span>
                 <button
                   className="mobile-menu-close"
                   onClick={() => setMobileMenuOpen(false)}
