@@ -571,15 +571,40 @@
 @media (max-width: 992px) {
   .pdp-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-xl);
   }
 
   .pdp-related-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
   }
 }
 
 @media (max-width: 640px) {
+  .pdp-main-image-frame {
+    aspect-ratio: 4 / 4.4;
+    max-height: 380px;
+  }
+
+  .pdp-other-thumbs {
+    gap: 6px;
+  }
+
+  .pdp-thumb-img-wrap {
+    max-height: 52px;
+  }
+
+  .pdp-fabric-chips {
+    grid-template-columns: 1fr;
+  }
+
+  .pdp-related-section {
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-xl);
+  }
+
   .pdp-related-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-md);
   }
 }
