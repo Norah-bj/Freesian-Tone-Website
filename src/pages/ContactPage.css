@@ -1,0 +1,272 @@
+/* ============================================
+   FREESIA TONE — Contact Page Styles (Clean & Centered)
+   ============================================ */
+
+.contact-page {
+  padding-top: var(--nav-height);
+  background-color: var(--color-white);
+  min-height: 100vh;
+}
+
+.contact-hero {
+  background-color: var(--color-ivory);
+  padding: var(--space-3xl) 0 var(--space-2xl) 0;
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.contact-hero-container {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-kicker {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-terracotta);
+  display: block;
+  margin-bottom: var(--space-2xs);
+  text-align: center;
+}
+
+.contact-hero-heading {
+  font-family: var(--font-editorial);
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  font-weight: 300;
+  line-height: 1.02;
+  color: var(--color-deep-brown);
+  margin-bottom: var(--space-xs);
+  text-align: center;
+}
+
+.contact-creed {
+  font-family: var(--font-editorial);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--color-taupe);
+  margin: 0 auto var(--space-md) auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.contact-accent-rule {
+  width: 44px;
+  height: 2px;
+  background-color: var(--color-terracotta);
+  margin: 0 auto;
+}
+
+/* === MAIN SECTION === */
+.contact-main-section {
+  padding: var(--space-3xl) 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: var(--space-2xl);
+  align-items: stretch;
+}
+
+.contact-channels-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.channels-heading {
+  font-family: var(--font-editorial);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-deep-brown);
+  margin-bottom: 4px;
+}
+
+.channels-body {
+  font-size: 0.82rem;
+  color: var(--color-taupe);
+  line-height: 1.55;
+  margin-bottom: var(--space-lg);
+  max-width: 44ch;
+}
+
+.channel-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  flex: 1;
+}
+
+.channel-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-ivory);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--duration-fast);
+}
+
+.channel-card:hover {
+  border-color: var(--color-terracotta);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(43, 25, 20, 0.04);
+}
+
+.channel-card--wa {
+  border-left: 3px solid var(--color-terracotta);
+}
+
+.channel-tag {
+  font-size: 0.55rem;
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-terracotta);
+  margin-bottom: 2px;
+  font-weight: var(--weight-bold);
+  display: block;
+}
+
+.channel-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-name {
+  font-family: var(--font-editorial);
+  font-size: 1.15rem;
+  color: var(--color-deep-brown);
+}
+
+.channel-detail {
+  font-size: 0.72rem;
+  color: var(--color-taupe);
+}
+
+.channel-arrow {
+  font-size: 0.65rem;
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-terracotta);
+  font-weight: var(--weight-medium);
+}
+
+/* === EXPANDED CONTACT FORM === */
+.contact-form-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact-form-box {
+  background-color: var(--color-ivory);
+  padding: var(--space-xl);
+  border: 1px solid var(--color-border);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.form-box-title {
+  font-family: var(--font-editorial);
+  font-size: 1.4rem;
+  color: var(--color-deep-brown);
+  margin-bottom: 2px;
+}
+
+.form-box-sub {
+  font-size: 0.76rem;
+  color: var(--color-taupe);
+  margin-bottom: var(--space-md);
+}
+
+.atelier-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+  justify-content: space-between;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xs);
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--color-deep-brown);
+  outline: none;
+  transition: border-color var(--duration-fast);
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: var(--color-terracotta);
+}
+
+.form-select {
+  cursor: pointer;
+}
+
+.form-textarea {
+  flex: 1;
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-success-msg {
+  text-align: center;
+  padding: var(--space-lg) 0;
+}
+
+.check-star {
+  font-size: 1.8rem;
+  color: var(--color-terracotta);
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.contact-success-msg h4 {
+  font-family: var(--font-editorial);
+  font-size: 1.6rem;
+  color: var(--color-deep-brown);
+  margin-bottom: 2px;
+}
+
+.contact-success-msg p {
+  font-size: 0.85rem;
+  color: var(--color-taupe);
+  margin-bottom: var(--space-md);
+}
+
+.reset-link {
+  font-size: 0.65rem;
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-terracotta);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

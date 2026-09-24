@@ -1,0 +1,96 @@
+/* ============================================
+   FREESIA TONE — Final CTA Styles (Compact)
+   ============================================ */
+
+.final-cta-section {
+  background-color: var(--color-terracotta);
+  color: var(--color-white);
+  padding: var(--space-2xl) 0; /* Down from space-5xl (massive height reduction) */
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.final-cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.08) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.final-cta-container {
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.final-cta-badge {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-sand);
+  margin-bottom: var(--space-xs);
+}
+
+.final-cta-title {
+  font-family: var(--font-editorial);
+  font-size: clamp(2.4rem, 4.8vw, 3.6rem); /* Down from 5.4rem */
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+  margin-bottom: var(--space-xs);
+}
+
+.final-cta-italic {
+  font-style: italic;
+  font-weight: 400;
+  color: #FEE8D6;
+}
+
+.final-cta-subtext {
+  font-family: var(--font-body);
+  font-size: 0.88rem; /* Down from 1.25rem */
+  font-weight: 300;
+  line-height: 1.55;
+  color: var(--color-sand);
+  margin-bottom: var(--space-lg); /* Down from space-3xl */
+  max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.final-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.cta-outline-light {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  color: var(--color-white) !important;
+}
+
+.cta-outline-light:hover {
+  background-color: var(--color-white) !important;
+  color: var(--color-terracotta) !important;
+  border-color: var(--color-white) !important;
+}
+
+@media (max-width: 640px) {
+  .final-cta-actions {
+    flex-direction: column;
+  }
+}

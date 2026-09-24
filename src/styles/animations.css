@@ -1,0 +1,190 @@
+/* ============================================
+   FREESIA TONE — Animation Language
+   "Slow fashion → slow, elegant motion"
+   ============================================ */
+
+/* === KEYFRAMES === */
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes imageReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes kenBurns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fabricFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes lineGrow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* === ANIMATION CLASSES === */
+
+/* Text / element slides up with fade */
+.reveal-up {
+  animation: revealUp var(--duration-slow) var(--ease-reveal) both;
+}
+
+/* Gentle opacity fade in */
+.reveal-fade {
+  animation: revealFade var(--duration-slow) var(--ease-fabric) both;
+}
+
+/* Editorial image entrance */
+.image-reveal {
+  animation: imageReveal var(--duration-reveal) var(--ease-fabric) both;
+}
+
+/* Slow zoom for hero backgrounds */
+.ken-burns {
+  animation: kenBurns 20s var(--ease-fabric) forwards;
+}
+
+/* Subtle floating effect */
+.fabric-float {
+  animation: fabricFloat 6s var(--ease-fabric) infinite;
+}
+
+/* Line decoration growing in */
+.line-grow {
+  animation: lineGrow var(--duration-slow) var(--ease-reveal) both;
+  transform-origin: left center;
+}
+
+/* Loading skeleton shimmer */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-ivory) 25%,
+    var(--color-beige) 50%,
+    var(--color-ivory) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* === STAGGER DELAYS === */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+
+/* === HOVER UTILITIES === */
+
+/* Subtle lift on hover */
+.hover-lift {
+  transition: transform var(--duration-normal) var(--ease-fabric);
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Image zoom on hover */
+.hover-zoom {
+  overflow: hidden;
+}
+.hover-zoom img {
+  transition: transform var(--duration-fabric) var(--ease-fabric);
+}
+.hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Underline grow on hover */
+.hover-underline {
+  position: relative;
+}
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-terracotta);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform var(--duration-normal) var(--ease-reveal);
+}
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}

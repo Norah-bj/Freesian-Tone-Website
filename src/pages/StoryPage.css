@@ -1,0 +1,220 @@
+/* ============================================
+   FREESIA TONE — Story Page Styles (Spacious & Comfortable)
+   ============================================ */
+
+.story-page {
+  padding-top: var(--nav-height);
+  background-color: var(--color-white);
+}
+
+.story-hero {
+  background-color: var(--color-ivory);
+  padding: var(--space-4xl) 0 var(--space-3xl) 0;
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.story-hero-container {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.story-hero-kicker {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-terracotta);
+  display: block;
+  margin-bottom: var(--space-2xs);
+  text-align: center;
+}
+
+.story-hero-heading {
+  font-family: var(--font-editorial);
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  font-weight: 300;
+  line-height: 1.02;
+  color: var(--color-deep-brown);
+  margin-bottom: var(--space-xs);
+  text-align: center;
+}
+
+.story-creed {
+  font-family: var(--font-editorial);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--color-taupe);
+  margin: 0 auto var(--space-md) auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.story-accent-rule {
+  width: 44px;
+  height: 2px;
+  background-color: var(--color-terracotta);
+  margin: 0 auto;
+}
+
+/* === NARRATIVE GRID === */
+.story-narrative-section {
+  padding: var(--space-4xl) 0;
+}
+
+.story-narrative-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: var(--space-4xl);
+  align-items: flex-start;
+  margin-bottom: var(--space-4xl);
+}
+
+.narrative-section-title {
+  font-family: var(--font-editorial);
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 300;
+  color: var(--color-deep-brown);
+  line-height: 1.1;
+  margin-bottom: var(--space-xl);
+}
+
+.story-quote-box {
+  background-color: var(--color-ivory);
+  border-left: 2px solid var(--color-terracotta);
+  padding: var(--space-xl);
+}
+
+.quote-phrase {
+  font-family: var(--font-editorial);
+  font-size: 1.35rem;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--color-terracotta-deep);
+}
+
+.story-p-lead {
+  font-family: var(--font-editorial);
+  font-size: 1.4rem;
+  line-height: 1.45;
+  color: var(--color-deep-brown);
+  margin-bottom: var(--space-md);
+}
+
+.story-p {
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--color-deep-brown);
+  opacity: 0.85;
+  margin-bottom: var(--space-md);
+}
+
+/* === CRAFT PILLARS === */
+.story-craft-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2xl);
+  background-color: var(--color-sand);
+  padding: var(--space-3xl);
+  margin-bottom: var(--space-4xl);
+}
+
+.craft-pillar {
+  display: flex;
+  flex-direction: column;
+}
+
+.pillar-index {
+  font-size: 0.65rem;
+  letter-spacing: var(--tracking-caps);
+  font-weight: var(--weight-bold);
+  color: var(--color-terracotta);
+  margin-bottom: var(--space-xs);
+}
+
+.pillar-head {
+  font-family: var(--font-editorial);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--color-deep-brown);
+  margin-bottom: var(--space-xs);
+}
+
+.pillar-copy {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--color-deep-brown);
+  opacity: 0.85;
+}
+
+/* === GALLERY STRIP === */
+.story-gallery-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-4xl);
+}
+
+.gallery-item {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background-color: var(--color-sand);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-fabric);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+/* === CLOSING === */
+.story-closing-box {
+  background-color: var(--color-ivory);
+  border: 1px solid var(--color-border);
+  padding: var(--space-4xl) var(--space-xl);
+  text-align: center;
+}
+
+.closing-kicker {
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-terracotta);
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.closing-title {
+  font-family: var(--font-editorial);
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 300;
+  color: var(--color-deep-brown);
+  margin-bottom: var(--space-xl);
+}
+
+.closing-cta {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .story-narrative-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+  .story-craft-pillars {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+  .story-gallery-strip {
+    grid-template-columns: 1fr;
+  }
+}

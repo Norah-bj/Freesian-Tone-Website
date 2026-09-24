@@ -1,0 +1,90 @@
+/* ============================================
+   FREESIA TONE — Section Heading Styles (Compact)
+   ============================================ */
+
+.section-heading {
+  margin-bottom: var(--space-xl); /* Down from space-3xl */
+  display: flex;
+  flex-direction: column;
+}
+
+.section-heading--center {
+  align-items: center;
+  text-align: center;
+}
+
+.section-heading--left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.section-heading--right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.section-caption {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-terracotta);
+  margin-bottom: var(--space-2xs);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.section-caption::before,
+.section-caption::after {
+  content: '';
+  width: 12px;
+  height: 1px;
+  background-color: var(--color-terracotta);
+}
+
+.section-heading--left .section-caption::before {
+  display: none;
+}
+
+.section-title {
+  font-family: var(--font-editorial);
+  font-size: var(--text-3xl); /* Down from text-4xl */
+  font-weight: var(--weight-light);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-deep-brown);
+  margin-bottom: var(--space-2xs);
+  max-width: 24ch;
+}
+
+.section-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-normal);
+  color: var(--color-taupe);
+  max-width: 58ch;
+}
+
+/* Light variant for dark backgrounds */
+.section-heading--light .section-caption {
+  color: var(--color-clay);
+}
+.section-heading--light .section-caption::before,
+.section-heading--light .section-caption::after {
+  background-color: var(--color-clay);
+}
+.section-heading--light .section-title {
+  color: var(--color-ivory);
+}
+.section-heading--light .section-subtitle {
+  color: var(--color-beige);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: var(--text-2xl);
+  }
+}

@@ -1,0 +1,184 @@
+/* ============================================
+   FREESIA TONE — Made To Order Styles (Compact)
+   ============================================ */
+
+.made-section {
+  background-color: var(--color-sand);
+  padding: var(--space-2xl) 0; /* Down from space-4xl */
+  border-top: 1px solid var(--color-border);
+}
+
+.made-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto var(--space-xl) auto;
+}
+
+.made-eyebrow {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-terracotta);
+  margin-bottom: var(--space-2xs);
+}
+
+.made-title {
+  font-family: var(--font-editorial);
+  font-size: clamp(2.2rem, 4.2vw, 3.4rem); /* Down from 4.6rem */
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--color-deep-brown);
+  margin-bottom: var(--space-2xs);
+}
+
+.made-title-italic {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-terracotta);
+}
+
+.made-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.55;
+  color: var(--color-deep-brown);
+  opacity: 0.85;
+}
+
+/* === 5-STEP ROADMAP (COMPACT) === */
+.made-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  position: relative;
+}
+
+.made-step-card {
+  background-color: var(--color-ivory);
+  padding: var(--space-md) var(--space-sm); /* Down from space-xl */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-border);
+  transition: transform var(--duration-normal) var(--ease-fabric);
+}
+
+.made-step-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(43, 25, 20, 0.05);
+}
+
+.step-num-badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xs);
+}
+
+.step-num-text {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-terracotta);
+}
+
+.step-icon-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--color-sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-deep-brown);
+}
+
+.step-icon-circle svg {
+  width: 13px;
+  height: 13px;
+}
+
+.step-card-title {
+  font-family: var(--font-editorial);
+  font-size: 1.1rem; /* Down from 1.3rem */
+  font-weight: 500;
+  color: var(--color-deep-brown);
+  margin-bottom: 2px;
+  line-height: 1.15;
+}
+
+.step-card-desc {
+  font-size: 0.78rem;
+  font-weight: var(--weight-medium);
+  color: var(--color-deep-brown);
+  line-height: 1.35;
+  margin-bottom: 2px;
+}
+
+.step-card-detail {
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--color-taupe);
+}
+
+/* === BENEFITS STRIP (COMPACT) === */
+.made-benefits-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  padding: var(--space-md) var(--space-lg); /* Down from space-xl */
+  margin-bottom: var(--space-xl);
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-xs);
+}
+
+.benefit-icon {
+  color: var(--color-terracotta);
+  font-size: 0.95rem;
+}
+
+.benefit-title {
+  display: block;
+  font-family: var(--font-editorial);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--color-deep-brown);
+  margin-bottom: 1px;
+}
+
+.benefit-text {
+  font-size: 0.76rem;
+  line-height: 1.4;
+  color: var(--color-taupe);
+}
+
+.made-cta-center {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .made-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .made-benefits-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .made-steps-grid {
+    grid-template-columns: 1fr;
+  }
+}
