@@ -38,15 +38,19 @@
   align-items: flex-start;
   text-decoration: none;
   line-height: 1;
+  min-width: 0;
+  flex: 0 1 auto;
 }
 
 .logo-main {
   font-family: var(--font-editorial);
-  font-size: 1.35rem; /* Down from 1.6rem */
+  font-size: clamp(0.82rem, 1.5vw, 1.35rem);
   font-weight: var(--weight-medium);
   letter-spacing: var(--tracking-editorial);
   color: var(--color-deep-brown);
   transition: color var(--duration-fast) var(--ease-elegant);
+  white-space: nowrap;
+  letter-spacing: clamp(0.015em, 0.55vw, var(--tracking-editorial));
 }
 
 .logo-sub {
@@ -299,5 +303,25 @@
   }
   .nav-container {
     padding: 0 var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    gap: 0.5rem;
+    padding: 0 0.75rem;
+  }
+
+  .nav-logo {
+    flex: 1 1 auto;
+  }
+
+  .logo-main {
+    font-size: clamp(0.78rem, 4.2vw, 1.1rem);
+    letter-spacing: 0.025em;
+  }
+
+  .mobile-menu-brand {
+    font-size: 1.1rem;
   }
 }

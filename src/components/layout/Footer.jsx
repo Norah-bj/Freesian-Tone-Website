@@ -17,12 +17,12 @@ export default function Footer() {
   return (
     <footer className="footer">
       {/* Large transparent watermark word */}
-      <div className="footer-watermark" aria-hidden="true">FREESIA</div>
+      <div className="footer-watermark" aria-hidden="true">FREESIAN</div>
 
       <div className="footer-top">
         <div className="footer-container">
           <div className="footer-brand-col">
-            <h2 className="footer-brand-title">FREESIA TONE</h2>
+            <h2 className="footer-brand-title">FREESIAN TONE</h2>
             <p className="footer-brand-desc">
               Contemporary pieces designed for movement, versatility, and intentional living.
               Handcrafted to order in Kigali, Rwanda.
